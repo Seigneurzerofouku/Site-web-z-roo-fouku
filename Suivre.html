@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact DE SERVICE CHEZ DABILGOU </title>
+    <style>
+        p {
+            color: blue;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>📱CONTACT DE DABILGOU TELECOM </h1>
+    <form id="loginForm">
+        <label for="serviceSouhaite">SERVICE SOUHAITÉ:</label><br>
+        <input type="text" id="serviceSouhaite" name="serviceSouhaite"><br>
+        <label for="numeroService">Numéro de service :</label><br>
+        <input type="text" id="numeroService" name="numeroService"><br>
+        <input type="button" value="LANCER L'APPEL DE SERVICE" onclick="connexion()">
+    </form>
+    <p id="message"></p>
+
+    <script>
+        function connexion() {
+            var serviceDemande = document.getElementById("serviceSouhaite").value;
+            var numeroService = document.getElementById("numeroService").value;
+            var message = document.getElementById("message");
+
+            if (serviceDemande === "Réparation" && numeroService === "06355215") {
+                message.innerHTML = "Dabilgou telecom recevra le message de votre besoin de service. " + serviceDemande + " 📱";
+                message.style.color = "green";
+            } else {
+                message.innerHTML = "Désolé nous n'avons pas reçu votre message. Vérifiez si le numéro que vous avez contacté est vraiment le nôtre ou le service demandé est vraiment notre domaine.";
+                message.style.color = "red";}
+        }
+    </script>
+</body>
+</html>
+
+            
+        
+    </script>
+</body>
+</html>
+
+<style>
+    p{
+        color:blue 
+        font-size:16px;
+    }` dans votre fichier HTML ou lier un fichier CSS externe. Voici comment vous pouvez le faire en ajoutant une section `<style>` directement dans votre fichier HTML :
+
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface de Connexion</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffcc; /* Jaune clair */
+            color: #000080; /* Bleu */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            color: #000080; /* Bleu */
+        }
+        form {
+            background-color: #ffffcc; /* Jaune clair */
+            padding: 20px;
+            border: 2px solid #000080; /* Bleu */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 128, 0.5); /* Ombrage bleu */
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            color: #000080; /* Bleu */
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #000080; /* Bleu */
+            border-radius: 5px;
+        }
+        input[type="button"] {
+            background-color: blue ; /* Bleu */
+            color: #ffffcc; /* Jaune clair */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        input[type="button"]:hover {
+            background-color: #008080; /* Vert bleu */
+        }
+        #message {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+</style>
